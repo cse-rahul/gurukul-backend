@@ -53,6 +53,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get('/test' , (req , res) =>{
+  res.send("Hello World! ")
+})
+
 // activate server on port
 app.listen(PORT, () => {
   console.log(`Server Listening on Port: ${PORT}`);
